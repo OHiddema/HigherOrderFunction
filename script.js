@@ -1,4 +1,4 @@
-function multiplyByTwo(arr, instruction) {
+function manipulateArray(arr, instruction) {
     for (let i=0; i<arr.length; i++) {
         arr[i] = instruction(arr[i]);
     }
@@ -12,5 +12,5 @@ function myFunction(item) {
 
 let myArr = [1, 2, 3, 4, 5];
 console.log(myArr);
-myArr = multiplyByTwo(myArr, myFunction);
+myArr = manipulateArray(myArr, myFunction);
 console.log(myArr);
